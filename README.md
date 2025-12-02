@@ -133,7 +133,6 @@ O pipeline proposto foi executado sobre um conjunto de 478 vulnerabilidades orig
 
 ### Distribuição por Severidade Normalizada
 
-![Distribuição das vulnerabilidades por nível de severidade padronizado](figuras/barras_severidade_padronizada.png)
 *Figura: Distribuição das vulnerabilidades por nível de severidade padronizado (n = 478)*
 
 - **High**: 136 (28,5%)
