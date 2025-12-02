@@ -1,0 +1,175 @@
+Layout Visual Extraído: report-4f63f3b0-a028-4460-ba21-c36f941e7f23-1.pdf
+Extraído em: 26/11/2025 às 16:44:14
+================================================================================
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Scan Report 
+ 
+ 
+ 
+ October 23, 2025 
+ 
+ 
+ Summary 
+ 
+ This document reports on the results of an automatic security scan. All dates are dis-
+ played using the timezone Coordinated Universal Time, which is abbreviated UTC. The
+ task was router2. The scan started at Thu Oct 23 00:10:15 2025 UTC and ended at
+ Thu Oct 23 00:10:26 2025 UTC. The report rst summarises the results found. Then, for
+ each host, the report describes every issue found. Please consider the advice given in each
+ description, in order to rectify the issue. 
+ Contents 
+ 
+ 
+ 1 Result Overview 2 
+ 
+ 2 Results per Host 2 
+ 2.1 192.168.1.254 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+ 
+ 2.1.1 Log general/tcp . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 2 RESULTS PER HOST 
+ 2 
+ 
+ Result Overview 
+ 
+ 
+ Host High Medium Low Log False Positive 
+ 192.168.1.254 0 0 0 2 0 
+ Total: 1 0 0 0 2 0 
+ 
+ Vendor security updates are not trusted. 
+ Overrides are on. When a result has an override, this report uses the threat of the override.
+ Information on overrides is included in the report. 
+ Notes are included in the report. 
+ This report might not show details of all issues that were found. 
+ It only lists hosts that produced issues. 
+ Issues with the threat level Debug are not shown. 
+ Issues with the threat level False Positive are not shown.
+ Only results with a minimum QoD of 70 are shown. 
+ This report contains all 2 results selected by the ltering described above. Before ltering there
+ were 2 results. 
+ 
+ 
+ Results per Host 
+ 
+ 192.168.1.254 
+ 
+ Host scan start Thu Oct 23 00:10:20 2025 UTC 
+ Host scan end Thu Oct 23 00:10:26 2025 UTC 
+ 
+ Service (Port) Threat Level 
+ general/tcp Log 
+ 
+ 
+ Log general/tcp 
+ 
+ Log (CVSS: 0.0) 
+ NVT: Do not print on AppSocket and socketAPI printers 
+ 
+ Summary 
+ The host seems to be an AppSocket or socketAPI printer. Scanning it will waste paper. So ports
+ 9100-9107 & 9112-9116 won't be scanned by default. 
+ Vulnerability Detection Result 
+ Exclusion reason: 
+ Found pattern: / on URL: http://192.168.1.254var ModelName="([^"]+)" 
+ 
+ Log Method 
+ . . . continues on next page . . . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 2 RESULTS PER HOST 
+ 3 
+ 
+ . . . continued from previous page . . .
+ Details: Do not print on AppSocket and socketAPI printers 
+ OID:1.3.6.1.4.1.25623.1.0.12241 
+ Version used: $Revision: 13541 $ 
+ 
+ Log (CVSS: 0.0) 
+ NVT: Do not scan printers 
+ 
+ Summary 
+ The host seems to be a printer. The scan has been disabled against this host.
+ 
+ Vulnerability Detection Result 
+ Exclusion reason: 
+ Found pattern: / on URL: http://192.168.1.254var ModelName="([^"]+)" 
+ 
+ Solution 
+ If you want to scan the remote host, uncheck the 'Exclude printers from scan' option within the
+ 'Global variable settings' of the scan cong in use and re-scan it.
+ Vulnerability Insight 
+ Many printers react very badly to a network scan. Some of them will crash, while others will
+ print a number of pages. This usually disrupt oce work and is usually a nuisance. As a result,
+ the scan has been disabled against this host. 
+ 
+ Log Method 
+ Details: Do not scan printers 
+ OID:1.3.6.1.4.1.25623.1.0.11933 
+ Version used: $Revision: 10929 $ 
+ 
+ [ return to 192.168.1.254 ] 
+ 
+ 
+ 
+ This le was automatically generated.
