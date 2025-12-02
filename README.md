@@ -133,6 +133,7 @@ O pipeline proposto foi executado sobre um conjunto de 478 vulnerabilidades orig
 
 ### Distribuição por Severidade Normalizada
 
+<img width="900" height="600" alt="barras_severidade_padronizada" src="https://github.com/user-attachments/assets/66180257-3854-462e-b1ed-37af3249095c" />
 *Figura: Distribuição das vulnerabilidades por nível de severidade padronizado (n = 478)*
 
 - **High**: 136 (28,5%)
@@ -142,19 +143,16 @@ O pipeline proposto foi executado sobre um conjunto de 478 vulnerabilidades orig
 
 As severidades Medium e High representam conjuntamente 71% dos achados, evidenciando exposição significativa a riscos críticos e de alta probabilidade de exploração.
 
-<img width="900" height="600" alt="barras_severidade_padronizada" src="https://github.com/user-attachments/assets/66180257-3854-462e-b1ed-37af3249095c" />
 
 
 ### Análise de Recorrência e Duplicidade
 
-![Vulnerabilidades mais recorrentes por nome original](figuras/duplicatas_por_nome2.png)
-*Figura: Vulnerabilidades mais recorrentes por nome original (top 30 de 312 entradas únicas)*
+<img width="2304" height="1131" alt="duplicatas_por_nome2" src="https://github.com/user-attachments/assets/d1aca7ba-5f62-4c36-a031-9590a3b324d8" />
 
 As vulnerabilidades mais frequentes segundo o campo `Name` original do OpenVAS apresentaram alta concentração em problemas de configuração e obsolescência de protocolos SSL/TLS (certificados expirados, suítes criptográficas fracas, falta de PFS, suporte a SSLv3), exposição repetida de serviços legados em claro (FTP, Telnet, VNC, rexec/rlogin/rsh), múltiplas instâncias de dívida técnica em componentes específicos (phpMyAdmin, TWiki, PostgreSQL, Samba e versões obsoletas do PHP), além de achados consolidados de inventário (Services, OS Detection) com elevada cardinalidade.
 
 Após a desduplicação semântica realizada com combinação de correspondência exata de CVE/CPE, o conjunto original foi reduzido de 478 para 294 entradas únicas, uma diminuição de 38,5%. A abordagem eliminou redundâncias por host, mantendo, entretanto, a representatividade global do risco.
 
-<img width="2304" height="1131" alt="duplicatas_por_nome2" src="https://github.com/user-attachments/assets/d1aca7ba-5f62-4c36-a031-9590a3b324d8" />
 
 
 
